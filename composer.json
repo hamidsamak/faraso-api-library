@@ -2,7 +2,7 @@
 	"name": "hamidsamak/faraso-api-library",
 	"type": "library",
 	"description": " Faraso (farasoo) domain reseller library for registering (.ir) domains",
-	"keywords": ["register", "renew", "domain", "ir", "iran"],
+	"keywords": ["faraso", "farasoo", "register", "renew", "domain", "ir", "iran"],
 	"homepage": "https://github.com/hamidsamak/faraso-api-library",
 	"license": "MIT",
 	"authors": [
