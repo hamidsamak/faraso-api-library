@@ -89,7 +89,7 @@ class Faraso {
 			if (is_soap_fault($res))
 				return array(false, 'REGISTER SOAP FAILED');
 
-			$result = $res['status'] < 1 ? true : false;
+			$result = isset($res['status']) && empty($res['status']) ? true : false;
 
 			return array($result, $this->message[$res['status']]);
 		} catch (TypeEnforcerException $e) {
@@ -117,7 +117,7 @@ class Faraso {
 			if (is_soap_fault($res))
 				return array(false, 'RENEW SOAP FAILED');
 
-			$result = $res['status'] < 1 ? true : false;
+			$result = isset($res['status']) && empty($res['status']) ? true : false;
 
 			return array($result, $this->message[$res['status']]);
 		} catch (TypeEnforcerException $e) {
